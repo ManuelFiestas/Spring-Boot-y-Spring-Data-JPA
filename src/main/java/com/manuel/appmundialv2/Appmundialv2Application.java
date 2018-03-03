@@ -8,5 +8,6 @@ public class Appmundialv2Application {
 
 	public static void main(String[] args) {
 		SpringApplication.run(Appmundialv2Application.class, args);
+
 	}
 }
