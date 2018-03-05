@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {HttpModule} from "@angular/http";
+import {HttpClientModule} from "@angular/common/http";
 
 //Rutas
 import {APP_ROUTING} from "./app.routes";
@@ -16,6 +16,7 @@ import { AboutComponent } from './components/about/about.component';
 import { PaisesComponent } from './components/paises/paises.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +28,8 @@ import { PaisesComponent } from './components/paises/paises.component';
   imports: [
     BrowserModule,
     APP_ROUTING,
-    HttpModule
+    HttpClientModule
+
   ],
   providers: [PaisesService],
   bootstrap: [AppComponent]

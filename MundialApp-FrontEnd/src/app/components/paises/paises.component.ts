@@ -7,7 +7,7 @@ import {PaisesService} from "../services/paises.service";
 })
 export class PaisesComponent implements OnInit {
 
-  paises:any[] = [];
+  paises:any = [];
 
   constructor( private _paisesService:PaisesService) { }
 
